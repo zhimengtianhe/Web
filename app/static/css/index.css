@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/*首页index*/
+.banner {
+  position: relative;
+  height: 330px;
+  overflow: hidden; }
+  .banner:hover .layout .next, .banner:hover .layout .prev {
+    display: block; }
+  .banner ul li {
+    width: 100%;
+    height: 330px;
+    position: absolute;
+    opacity: 1;
+    overflow: hidden; }
+    .banner ul li a {
+      width: 100%;
+      height: 100%;
+      display: block; }
+  .banner .layout {
+    position: relative;
+    height: 330px; }
+    .banner .layout .controls {
+      position: absolute;
+      bottom: 20px;
+      left: 400px;
+      height: 30px;
+      width: 200px;
+      line-height: 30px;
+      text-align: center;
+      z-index: 10; }
+      .banner .layout .controls i {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        margin: 0 5px;
+        background: none;
+        background-color: #fff;
+        cursor: pointer;
+        border-radius: 50%;
+        -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+        -o-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5); }
+      .banner .layout .controls .now {
+        background-color: #ff9c00; }
+    .banner .layout .next, .banner .layout .prev {
+      position: absolute;
+      top: 50%;
+      margin-top: -29px;
+      width: 50px;
+      height: 50px;
+      z-index: 20;
+      display: none; }
+    .banner .layout .next {
+      right: -70px;
+      background: url(../images/sprite.png) no-repeat -50px -21px; }
+    .banner .layout .prev {
+      left: -70px;
+      background: url(../images/sprite.png) no-repeat 0 -21px; }
+    .banner .layout .banner_pop {
+      width: 200px;
+      height: 240px;
+      position: absolute;
+      right: -5px;
+      top: 45px;
+      text-align: center;
+      z-index: 99;
+      background-color: rgba(0, 0, 0, 0.4);
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -o-border-radius: 10px;
+      border-radius: 10px; }
+      .banner .layout .banner_pop .txt1 {
+        font-size: 12px;
+        color: #fff;
+        margin-top: 40px; }
+      .banner .layout .banner_pop .txt2 {
+        font-size: 40px;
+        color: #ff9c00;
+        margin-top: 34px; }
+        .banner .layout .banner_pop .txt2 span {
+          font-size: 16px; }
+      .banner .layout .banner_pop a {
+        width: 170px;
+        height: 30px;
+        line-height: 30px;
+        margin-top: 35px;
+        font-size: 14px;
+        color: #fff; }
+
+.banner .layout {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0px; }
+
+.content {
+  width: 1000px;
+  min-height: 510px;
+  margin: 40px auto; }

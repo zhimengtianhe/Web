@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*首页index*/
+@import  "helpers/_mixins.scss";                  //常用变量定义
+@import  "components/banner.scss";                  //banner
+%indexlayout {
+	width:1000px;
+	margin:0 auto;
+	padding:0px;
+}
+
+.content{
+	width:1000px;
+	min-height: 510px;
+	margin: 40px auto;
+	
+}

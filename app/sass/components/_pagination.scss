@@ -1,0 +1,70 @@
+@charset "utf-8";
+/*分页共通样式*/
+@import  "helpers/_mixins.scss";  
+.somePage {
+    width:1000px;
+    margin: 10px auto 0;
+    text-align: right;
+    a{
+        /*padding: 0 9px;*/ 
+        width: 30px;
+        height:30px;
+        line-height:30px;
+        margin: 3px;
+        display: inline-block;
+        text-align: center;
+        border: 1px solid #dbdada;
+        color: #666;
+        font-weight: 700;
+       @include border-radius(50%);
+        &:hover{
+            background: #ff9c00; 
+            color: #fff; 
+            border: 1px solid #ff9c00;
+        }
+    }
+    .iconPagePrev,.iconPageNext,.homePage,.endPage{
+       padding: 0 9px;
+       width: 50px;
+       height: 26px;
+       line-height: 26px;
+       color: #666;
+       border: 1px solid #dbdada;
+       @include border-radius(13px);
+       &:hover{
+            background: #ff9c00;
+            color: #fff;
+            border: 1px solid #ff9c00;
+       }
+   }
+    a.current {
+    background: #ff9c00;
+    color: #fff;
+    border: 1px solid #ff9c00;
+   }
+}
+
+/*计算数量部分的样式*/
+
+#calculation{
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  input{
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    color: #5e5e5e;
+  }
+  .add,.reduce{
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+  }
+}
+

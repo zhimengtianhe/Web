@@ -1,0 +1,259 @@
+/*zh 2016 0310*/
+@import  "helpers/_mixins.scss"; 
+@charset "utf-8";
+.topbar{
+	font-size:12px;
+	line-height:30px;
+	background-color: #4e4e4e;
+	color:#cccccc;
+	.layout{
+		.bar_left{
+			float:left;  
+			ul{
+				li{ 
+					float:left;
+					position: relative;
+					div{
+						display:none;
+						position: absolute;
+						background-color:$whiteColor;
+						height:160px;
+						padding:10px;
+						left:-55px;
+						z-index:99;
+						border:1px solid #f49128;
+						img{ 
+							width:150px;
+							height:150px;
+						}
+						p{	
+							line-height:12px;
+							margin-top:-10px;
+							color:#000;
+							text-align:center;
+						}
+					}
+				}
+				.WeChat i{
+				width:18px;
+				height:15px;
+				margin:-3px 0 0 22px;
+				cursor:pointer;
+				background-position:0 0;
+				}
+				.weibo i{
+					width:19px;
+					height:14px;
+					margin:0px 0 0 20px;
+					cursor:pointer;
+					background-position:-18px 0;
+				}
+			}	
+		}
+		.bar_right{
+			float:right;
+			color:$whiteColor;
+			a{
+				color:$whiteColor;
+				margin:0 4px;
+			}
+		}
+	}
+}
+.nav{
+	height:99px;
+	background-color:$whiteColor;
+	border-bottom:1px solid $seColor;
+	.nav_left{
+		float:left;
+		height:99px;
+		.logo{
+			display:inline-block;
+			width:290px;
+			height:99px;
+		}
+	}
+	.nav_right{
+		float:right;
+		line-height:99px;
+		li{
+			float:left;
+			text-align:right;
+			/* 小满积分商城为padding:0 25px; */
+			padding:0 18px;
+			height:99px;
+			a{
+				font-size:16px;
+				&:hover{
+					color:$seColor;
+				}
+			}
+			a.active{
+				color:$seColor;
+			}
+		}
+		.myaccount{
+			position: relative;
+			margin-right:-20px;
+			line-height:0;
+			a{
+				display:inline-block;
+				width:78px;
+				height:22px;
+				line-height:22px;
+				text-align:center;
+				border:1px solid #f43500;
+				@include border-radius(11px);
+				color:#f43500;
+				margin-top:38px;
+				&:hover{
+					color:#f43500;
+				}
+			}
+			ul{
+				position: absolute;
+				z-index:999;
+				top:50px;
+				right:0;
+				display:none;
+				li{
+					padding:0;
+					float:none;
+					text-align:center;
+					background-color:$whiteColor;
+					a{
+						display:block;
+						width:100px;
+						height:40px;
+						line-height:40px;
+					}
+					&:hover{
+						background-color:red;
+					}
+				}
+			}
+			&:hover{
+				ul{
+					display:block;
+				}
+			}
+		}
+		.myinvest{
+			position: relative;
+			a{
+				
+			}
+			ul{
+				position: absolute;
+				z-index:999;
+				left:6px;
+				display:none;
+				li{
+					background-color:rgba(255,255,255,.9);
+					text-align:center;
+					width:88px;
+					height:28px;
+					border:1px solid $seColor;
+					padding:0;
+					line-height:28px;
+					&:hover{
+						background-color:$seColor;
+						a{
+							color:$whiteColor;	
+						}
+					}
+					a{
+						font-size:14px;
+						color:#5e5e5e;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*二级菜单样式*/
+.Shead{
+	width: 100%;
+	.box_s{
+		border-bottom:1px solid $seColor;
+		height:auto;
+		.nav_block{
+			width: 100%;
+			height: 52px;
+			background: #f3f3f3; 
+			.nav_list {
+			     height:52px;
+			  li{
+				width: 125px;
+				height: 52px;
+				float: left;
+				text-align: left;
+				a{
+					display: inline-block;
+					width: 125px;
+					height: 52px;
+					font-size: 14px;
+					color: #727272;
+					line-height: 52px;
+				}
+			  }
+			  li.fn-fr{
+			     float:right;  
+			  }
+			  li.active,li:hover{
+			  	a{
+			  		color: $seColor;
+			  	}
+			  }
+			}
+		}	
+		.nav_none{
+			width: 100%;
+			li{
+				position: relative;
+			}
+			.triangle{
+				display: inline-block;
+				width:15px;
+				height:15px;
+				background-position:-317px -21px;
+				position: absolute;
+				bottom: -2px;
+				left: 22px;
+				display: none;
+			}
+			.nav_list2{
+				height: 52px;
+				display: none;
+				li{
+					float: left;
+					width: 125px;
+				    height: 52px;
+				    text-align: left;
+				    line-height: 52px;
+			      a{
+			      	display: inline-block;
+			      	width: 125px;
+			      	height: 52px;
+					color: #b6b6b6;
+					}
+					a.no-drop{
+						cursor: no-drop;
+					}
+				}
+				li:hover,li.active{
+					a{
+					color: #ff9c00;	
+					}
+					.triangle{
+						display: block;
+					}
+				}
+			}	
+		}
+	}
+}	
+
+
